@@ -6,19 +6,32 @@ function hideOld() {
 
 	var today = new Date();
 	today.setHours(0,0,0,0)
-	var lines = document.getElementsByTagName("li");
+	var lines = document.body.getElementsByClassName("grid-item");
 
-	for(var i = 0; i < lines.length; i++) {
-		
+	for(var i = 1; i < lines.length; i=i+5) {
+				
 		var str = lines[i].innerHTML;
-		var day = str.substring(0,2);
-		var month = str.substring(3,5);
-		var year = str.substring(6,10);
-		var date = new Date(year+'-'+month+'-'+day);
-
-		if (date < today) {
-			lines[i].style.display = "none";
-		}
+		
+		try {
+			var day = str.substring(0,2) -1;
+			var month = str.substring(3,5);
+			var year = str.substring(6,10);
+			var date = new Date(year+'-'+month+'-'+day);
+			date.setHours(0,0,0,0)
+			date.setTime(date.getTime()+100800000); //28 hours
+			console.log(date)
+			
+			if (date < today) {
+				lines[i-1].style.display = "none";
+				lines[i].style.display = "none";
+				lines[i+1].style.display = "none";
+				lines[i+2].style.display = "none";
+				lines[i+3].style.display = "none";		
+			} else {break}
+		
+		} catch(e) {
+			console.log(e)			
+		}				
 	}
 }
 </script>
@@ -33,12 +46,12 @@ function hideOld() {
 		display: grid;
 		column-gap: 15px;
 		grid-template-columns: 1fr auto auto auto 1fr;			
-		background-color: black;
+		//background-color: black;
 		padding: 0px;
 	}
 	
 	.grid-item {
-		background-color: black;
+		//background-color: black;
 		border: 0px solid black;
 		padding: 0px;
 		font-size: inherited;
@@ -54,6 +67,8 @@ function hideOld() {
  	}
 	a:hover {
 		color: white;
+		text-shadow: 1px 0px 0px white;
+		//font-weight:bold	
 	}
 
 	.my_text {
@@ -63,21 +78,11 @@ function hideOld() {
     }
 
 </style>
-</head><body class="my_text" onload="hideOld()" style="background-color:#000000;">
+</head><body background="back.jpg" class="my_text" onload="hideOld()" style="background-color:#000000;">
 <div class="grid-container">
-<div class="grid-item"></div>
+<div></div>
 <div class="header">Keikat Helsinki</div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
-<div class="grid-item">23.11.2022</div>
-<div class="grid-item">On the Rocks</div>
-<div class="grid-item"><a href="https://www.rocks.fi/tapahtumat/kartsy-back-to-bacteria-levyjulkkarit-support-katri-o/">Kärtsy: Back To Bacteria -levyjulkkarit; support: Katri O</a></div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
-<div class="grid-item">23.11.2022</div>
-<div class="grid-item">Lepakkomies</div>
-<div class="grid-item"><a href="https://www.lepis.fi/tapahtumat/rakaa-lovee-lepiksessa-stinkbird-poni-suloiset/">Räkää &amp; Lovee Lepiksessä: Stinkbird + Poni + Suloiset</a></div>
-<div class="grid-item"></div>
+<div></div>
 <div class="grid-item"></div>
 <div class="grid-item">24.11.2022</div>
 <div class="grid-item">Storyville</div>
@@ -161,12 +166,12 @@ function hideOld() {
 <div class="grid-item"></div>
 <div class="grid-item">25.11.2022</div>
 <div class="grid-item">Korjaamo</div>
-<div class="grid-item"><a href="https://korjaamo.fi/event/korjaamo-360-antti-autio-jouset/">Korjaamo 360°: Antti Autio + Jouset (LOPPUUNMYYTY)</a></div>
+<div class="grid-item"><a href="https://korjaamo.fi/event/korjaamo-360-antti-autio-jouset/">Korjaamo 360°: Antti Autio + Jouset (UUSI PÄIVÄMÄÄRÄ 11.2.2023)</a></div>
 <div class="grid-item"></div>
 <div class="grid-item"></div>
 <div class="grid-item">25.11.2022</div>
 <div class="grid-item">Korjaamo</div>
-<div class="grid-item"><a href="https://korjaamo.fi/event/korjaamo-360-antti-autio-jouset-alkuillan-keikka/">Korjaamo 360°: Antti Autio + Jouset, alkuillan keikka (LOPPUUNMYYTY)</a></div>
+<div class="grid-item"><a href="https://korjaamo.fi/event/korjaamo-360-antti-autio-jouset-alkuillan-keikka/">Korjaamo 360°: Antti Autio + Jouset, alkuillan keikka (UUSI PÄIVÄMÄÄRÄ 11.2.2023)</a></div>
 <div class="grid-item"></div>
 <div class="grid-item"></div>
 <div class="grid-item">25.11.2022</div>
@@ -276,7 +281,7 @@ function hideOld() {
 <div class="grid-item"></div>
 <div class="grid-item">26.11.2022</div>
 <div class="grid-item">Korjaamo</div>
-<div class="grid-item"><a href="https://korjaamo.fi/event/sydan-sydan-20-vuotta/">Sydän, sydän (20 vuotta)</a></div>
+<div class="grid-item"><a href="https://korjaamo.fi/event/sydan-sydan-20-vuotta/">Sydän, sydän (20 vuotta) (UUSI PÄIVÄMÄÄRÄ)</a></div>
 <div class="grid-item"></div>
 <div class="grid-item"></div>
 <div class="grid-item">26.11.2022</div>
@@ -645,6 +650,11 @@ function hideOld() {
 <div class="grid-item"></div>
 <div class="grid-item"></div>
 <div class="grid-item">05.12.2022</div>
+<div class="grid-item">G Livelab</div>
+<div class="grid-item"><a href="https://www.glivelab.fi/events/let-there-be-drums-pikkujoulujamit-637f2c45555cd6750aaf214f/">Let there be drums! -pikkujoulujamit</a></div>
+<div class="grid-item"></div>
+<div class="grid-item"></div>
+<div class="grid-item">05.12.2022</div>
 <div class="grid-item">Kuudes Linja</div>
 <div class="grid-item"><a href="https://www.eventu.al/en/event/1172/finland/helsinki/marko-haavisto-poutahaukathaaveet">MARKO HAAVISTO &amp; POUTAHAUKAT + HAAVEET</a></div>
 <div class="grid-item"></div>
@@ -790,6 +800,11 @@ function hideOld() {
 <div class="grid-item"></div>
 <div class="grid-item"></div>
 <div class="grid-item">09.12.2022</div>
+<div class="grid-item">Lepakkomies</div>
+<div class="grid-item"><a href="https://www.lepis.fi/tapahtumat/m-o-r-a-nihile-support/">M.O.R.A + Nihile + support</a></div>
+<div class="grid-item"></div>
+<div class="grid-item"></div>
+<div class="grid-item">09.12.2022</div>
 <div class="grid-item">Storyville</div>
 <div class="grid-item"><a href="https://storyville.fi/events/million-dollar-tones/">MILLION DOLLAR TONES</a></div>
 <div class="grid-item"></div>
@@ -802,6 +817,11 @@ function hideOld() {
 <div class="grid-item">09.12.2022</div>
 <div class="grid-item">Semifinal</div>
 <div class="grid-item"><a href="https://tavastiaklubi.fi/events/2022-12-09/safira/84857/">Safira</a></div>
+<div class="grid-item"></div>
+<div class="grid-item"></div>
+<div class="grid-item">09.12.2022</div>
+<div class="grid-item">On the Rocks</div>
+<div class="grid-item"><a href="https://www.rocks.fi/tapahtumat/oisin-on-kivempaa-dj-mortti-dj-villaeriste/">Öisin On Kivempaa: DJ Mortti &amp; DJ Villæriste</a></div>
 <div class="grid-item"></div>
 <div class="grid-item"></div>
 <div class="grid-item">10.12.2022</div>
@@ -845,8 +865,18 @@ function hideOld() {
 <div class="grid-item"></div>
 <div class="grid-item"></div>
 <div class="grid-item">10.12.2022</div>
+<div class="grid-item">Lepakkomies</div>
+<div class="grid-item"><a href="https://www.lepis.fi/tapahtumat/lapila-nights-have-you-ever-seen-the-jane-fonda-aerobic-vhs-jata-jamat-barely-legal-plays-the-hives/">LAPILA NIGHTS: Have You Ever Seen the Jane Fonda Aerobic VHS? + Jätä Jämät + BARELY LEGAL plays The Hives</a></div>
+<div class="grid-item"></div>
+<div class="grid-item"></div>
+<div class="grid-item">10.12.2022</div>
 <div class="grid-item">Kaiku</div>
 <div class="grid-item"><a href="https://www.eventu.al/en/event/1282/finland/helsinki/mr-scruff">MR. SCRUFF</a></div>
+<div class="grid-item"></div>
+<div class="grid-item"></div>
+<div class="grid-item">10.12.2022</div>
+<div class="grid-item">On the Rocks</div>
+<div class="grid-item"><a href="https://www.rocks.fi/tapahtumat/midnight-city-club-dj-mikke-the-flamer-dj-john-curtain/">Midnight City Club: DJ Mikke The Flamer &amp; DJ John Curtain</a></div>
 <div class="grid-item"></div>
 <div class="grid-item"></div>
 <div class="grid-item">10.12.2022</div>
@@ -927,6 +957,11 @@ function hideOld() {
 <div class="grid-item">13.12.2022</div>
 <div class="grid-item">Koko Jazz Club</div>
 <div class="grid-item"><a href="https://www.kokojazz.fi/event-details/soppajazz-mikko-heleva-jonas-metsakyla-2">Soppajazz: Mikko Helevä &amp; Jonas Metsäkylä</a></div>
+<div class="grid-item"></div>
+<div class="grid-item"></div>
+<div class="grid-item">13.12.2022</div>
+<div class="grid-item">Tenho Restobar</div>
+<div class="grid-item"><a href="https://www.facebook.com/events/682260309857877">Tenho Poetry Slam</a></div>
 <div class="grid-item"></div>
 <div class="grid-item"></div>
 <div class="grid-item">14.12.2022</div>
@@ -1285,6 +1320,11 @@ function hideOld() {
 <div class="grid-item"></div>
 <div class="grid-item"></div>
 <div class="grid-item">07.01.2023</div>
+<div class="grid-item">Korjaamo</div>
+<div class="grid-item"><a href="https://korjaamo.fi/event/leena-harjunpaa-co-feeling-cute-2/">Leena Harjunpää Co: Feeling Cute</a></div>
+<div class="grid-item"></div>
+<div class="grid-item"></div>
+<div class="grid-item">07.01.2023</div>
 <div class="grid-item">Lepakkomies</div>
 <div class="grid-item"><a href="https://www.lepis.fi/tapahtumat/sallan-tauti-sekava-korkkivika-kosteusvaurio/">Sallan Tauti + Sekava + Korkkivika + Kosteusvaurio</a></div>
 <div class="grid-item"></div>
@@ -1332,6 +1372,11 @@ function hideOld() {
 <div class="grid-item">14.01.2023</div>
 <div class="grid-item">Tavastia</div>
 <div class="grid-item"><a href="https://tavastiaklubi.fi/events/2023-01-14/vv/81691/">VV</a></div>
+<div class="grid-item"></div>
+<div class="grid-item"></div>
+<div class="grid-item">14.01.2023</div>
+<div class="grid-item">On the Rocks</div>
+<div class="grid-item"><a href="https://www.rocks.fi/tapahtumat/velvet-insane/">Velvet Insane</a></div>
 <div class="grid-item"></div>
 <div class="grid-item"></div>
 <div class="grid-item">15.01.2023</div>
@@ -1387,6 +1432,11 @@ function hideOld() {
 <div class="grid-item">21.01.2023</div>
 <div class="grid-item">Korjaamo</div>
 <div class="grid-item"><a href="https://korjaamo.fi/event/laineen-kasperi-liian-iso-trio-levyjulkkarit/">Laineen Kasperi &amp; Liian Iso Trio (levyjulkkarit)</a></div>
+<div class="grid-item"></div>
+<div class="grid-item"></div>
+<div class="grid-item">21.01.2023</div>
+<div class="grid-item">Korjaamo</div>
+<div class="grid-item"><a href="https://korjaamo.fi/event/sydan-sydan-20-vuotta-uusi-paivamaara/">Sydän, sydän (20 vuotta) (UUSI PÄIVÄMÄÄRÄ)</a></div>
 <div class="grid-item"></div>
 <div class="grid-item"></div>
 <div class="grid-item">25.01.2023</div>
@@ -1525,6 +1575,11 @@ function hideOld() {
 <div class="grid-item"></div>
 <div class="grid-item"></div>
 <div class="grid-item">11.02.2023</div>
+<div class="grid-item">Korjaamo</div>
+<div class="grid-item"><a href="https://korjaamo.fi/event/antti-autio-jouset/">Antti Autio + Jouset</a></div>
+<div class="grid-item"></div>
+<div class="grid-item"></div>
+<div class="grid-item">11.02.2023</div>
 <div class="grid-item">Semifinal</div>
 <div class="grid-item"><a href="https://tavastiaklubi.fi/events/2023-02-11/arttu-lindeman/86154/">Arttu Lindeman</a></div>
 <div class="grid-item"></div>
@@ -1592,11 +1647,6 @@ function hideOld() {
 <div class="grid-item">19.02.2023</div>
 <div class="grid-item">Tavastia</div>
 <div class="grid-item"><a href="https://tavastiaklubi.fi/events/2023-02-19/olavi-uusivirta/86251/">Olavi Uusivirta</a></div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
-<div class="grid-item">20.02.2023</div>
-<div class="grid-item">Lepakkomies</div>
-<div class="grid-item"><a href="https://www.lepis.fi/tapahtumat/extermination-dismemberment-neurosurgery-putrid-defecation/">Extermination Dismemberment + Neurosurgery + Putrid Defecation</a></div>
 <div class="grid-item"></div>
 <div class="grid-item"></div>
 <div class="grid-item">24.02.2023</div>
@@ -1917,15 +1967,5 @@ function hideOld() {
 <div class="grid-item">14.11.2023</div>
 <div class="grid-item">Kulttuuritalo</div>
 <div class="grid-item"><a href="https://www.kulttuuritalo.fi/tapahtuma/ian-anderson-presents-jethro-tull/">Ian Anderson Presents Jethro Tull</a></div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
-<div class="grid-item">23.11.2023</div>
-<div class="grid-item">Tenho Restobar</div>
-<div class="grid-item"><a href="https://fb.me/e/2PnjTD2TQ">Linko</a></div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
-<div class="grid-item">23.11.2023</div>
-<div class="grid-item">Kuudes Linja</div>
-<div class="grid-item"><a href="https://www.eventu.al/en/event/1717/finland/helsinki/olivera-paradox-albumin-levynjulkkari">OLIVERA – PARADOX-LEVYNJULKKARIT + ILON</a></div>
 <div class="grid-item"></div>
 </div></body></html>
