@@ -13,7 +13,11 @@ function hideOld() {
 				
 		var str = lines[i].innerHTML;
 		
+		if (str == '') 
+			{continue}
+		
 		try {
+			
 			var day = str.substring(0,2);
 			var month = str.substring(3,5);
 			var year = str.substring(6,10);
