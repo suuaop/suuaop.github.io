@@ -13,6 +13,9 @@ function hideOld() {
 				
 		var str = lines[i].innerHTML;
 		
+		if (str == '') 
+			{continue}
+		
 		try {
 			var day = str.substring(0,2);
 			var month = str.substring(3,5);
@@ -101,309 +104,14 @@ function hideOld() {
 <div class="header">KEIKAT HELSINKI</div>
 <div></div>
 <div class="grid-item"></div>
-<div class="grid-item">13.12.2024</div>
-<div class="grid-item">Bar Loose</div>
-<div class="grid-item"><a href="https://barloose.com/live/pihalla-kemer-tove-johnson/">Pihalla, Kemer, Tove Johnson</a></div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
-<div class="grid-item">13.12.2024</div>
-<div class="grid-item">Bar Loose</div>
-<div class="grid-item"><a href="https://barloose.com/live/dj-mortin-disko-2/">DJ Mortin Disko</a></div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
-<div class="grid-item">13.12.2024</div>
-<div class="grid-item">Bar Tÿpo</div>
-<div class="grid-item"><a href="https://www.bartypo.fi/event/reginald-dj/">Reginald (DJ)</a></div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
-<div class="grid-item">13.12.2024</div>
-<div class="grid-item">Boothill</div>
-<div class="grid-item"><a href="https://www.boothill.fi/bandi-illat/">DOL, Kalmantach</a></div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
-<div class="grid-item">13.12.2024</div>
-<div class="grid-item">G Livelab</div>
-<div class="grid-item"><a href="https://glivelab.fi/events/ville-ahonen-66c8291639a404c2de0c3371/">Ville Ahonen</a></div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
-<div class="grid-item">13.12.2024</div>
-<div class="grid-item">Kaiku</div>
-<div class="grid-item"><a href="https://www.eventu.al/en/event/6392/finland/helsinki/joni-dj-denzel">DENZEL &amp; JONI DJ</a></div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
-<div class="grid-item">13.12.2024</div>
-<div class="grid-item">Korjaamo</div>
-<div class="grid-item"><a href="https://korjaamo.fi/event/martti-servo-napander-elakelaiset/">Martti Servo &amp; Napander, Eläkeläiset</a></div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
-<div class="grid-item">13.12.2024</div>
-<div class="grid-item">Kulttuuritalo</div>
-<div class="grid-item"><a href="https://kulttuuritalo.fi/tapahtuma/kult-focus-on-nu-rave-veerti-victoria-erkko-no-rave-misfts/">KULT: Focus On: Nu Rave – Veerti, Victoria, Erkko (No Rave/Misf*ts)</a></div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
-<div class="grid-item">13.12.2024</div>
-<div class="grid-item">Kulttuuritalo</div>
-<div class="grid-item"><a href="https://kulttuuritalo.fi/tapahtuma/vauhti-kiihtyy-pikkujoulut/">Vauhti kiihtyy Pikkujoulut</a></div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
-<div class="grid-item">13.12.2024</div>
-<div class="grid-item">Kuudes Linja</div>
-<div class="grid-item"><a href="https://www.tiketti.fi/sepi-kumpulainen-band-christmas-special-kuudes-linja-lippuja/103548">ALKUILLAN KONSERTTI: SEPI KUMPULAINEN BAND – CHRISTMAS SPECIAL + WIKIROCK + KALEVI HELVETTI</a></div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
-<div class="grid-item">13.12.2024</div>
-<div class="grid-item">Kuudes Linja</div>
-<div class="grid-item"><a href="https://www.eventu.al/en/event/6488/finland/helsinki/soli-club-k-pop-night">SOLI CLUB – HOLIDAY SPECIAL</a></div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
-<div class="grid-item">13.12.2024</div>
-<div class="grid-item">Lepakkomies</div>
-<div class="grid-item"><a href="https://www.lepis.fi/tapahtumat/aaro630/">Aaro630</a></div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
-<div class="grid-item">13.12.2024</div>
-<div class="grid-item">Lepakkomies</div>
-<div class="grid-item"><a href="https://www.lepis.fi/tapahtumat/dnb-finland-pikkujoulut/">DnB Finland – Pikkujoulut</a></div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
-<div class="grid-item">13.12.2024</div>
-<div class="grid-item">Malmitalo</div>
-<div class="grid-item"><a href="https://www.malmitalo.fi/fi/tapahtumat/?etype=31&amp;el=42&amp;show=200">Luciakulkue ja -kuoro</a></div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
-<div class="grid-item">13.12.2024</div>
-<div class="grid-item">Manala</div>
-<div class="grid-item"><a href="https://www.manala.fi/fi/event/kuolleet-sielut/2024-12-13/">Kuolleet sielut</a></div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
-<div class="grid-item">13.12.2024</div>
-<div class="grid-item">On the Rocks</div>
-<div class="grid-item"><a href="https://www.rocks.fi/tapahtumat/on-pakko-ajaa-90s-rock-disco-dj-punis-dj-bone-daddy/">On pakko ajaa 90s rock disco! DJ Punis &amp; DJ Bone Daddy</a></div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
-<div class="grid-item">13.12.2024</div>
-<div class="grid-item">On the Rocks</div>
-<div class="grid-item"><a href="https://www.rocks.fi/tapahtumat/wolfheart-swansong-scythe-of-sorrow/">Wolfheart, Swansong, Scythe of Sorrow</a></div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
-<div class="grid-item">13.12.2024</div>
-<div class="grid-item">Oranssi</div>
-<div class="grid-item"><a href="https://oranssi.net/tapahtumat/">JWS, Arseeni &amp; Kyhiskessu</a></div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
-<div class="grid-item">13.12.2024</div>
-<div class="grid-item">Post Bar</div>
-<div class="grid-item"><a href="https://postbar.fi/#xodjlinaschifferzezedanielkayrouzjustusvaltanentheofuego-december13th">XO: dj lina schiffer&amp; Zeze &amp; Daniel Kayrouz &amp; Justus Valtanen &amp; THEOFUEGO</a></div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
-<div class="grid-item">13.12.2024</div>
-<div class="grid-item">Semifinal</div>
-<div class="grid-item"><a href="https://tavastiaklubi.fi/events/2024-12-13/nupu-hene-jaasalo/103274/">NUPU, Hene Jääsalo</a></div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
-<div class="grid-item">13.12.2024</div>
-<div class="grid-item">Siltanen</div>
-<div class="grid-item"><a href="https://siltanen.org/">Herkules</a></div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
-<div class="grid-item">13.12.2024</div>
-<div class="grid-item">Storyville</div>
-<div class="grid-item"><a href="https://storyville.fi/events/nina-tapio-band-abba-show/">Nina Tapio &amp; Band - ABBA SHOW</a></div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
-<div class="grid-item">13.12.2024</div>
-<div class="grid-item">Storyville</div>
-<div class="grid-item"><a href="https://storyville.fi/events/unna-helge-tallqvist-band/">Unna &amp; Helge Tallqvist Band</a></div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
-<div class="grid-item">13.12.2024</div>
-<div class="grid-item">Tanner</div>
-<div class="grid-item"><a href="https://ravintolatanner.fi/music">Fling</a></div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
-<div class="grid-item">13.12.2024</div>
-<div class="grid-item">Tavastia</div>
-<div class="grid-item"><a href="https://tavastiaklubi.fi/events/2024-12-13/dj-ibusal-lisakeikka/103642/">DJ Ibusal (Lisäkeikka)</a></div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
-<div class="grid-item">13.12.2024</div>
-<div class="grid-item">Vuotalo</div>
-<div class="grid-item"><a href="https://www.vuotalo.fi/fi/tapahtumat/?etype=31&amp;el=45&amp;show=200">Rastis-Lucia besöker Nordhuset</a></div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
-<div class="grid-item">13.12.2024</div>
-<div class="grid-item">Ääniwalli</div>
-<div class="grid-item"><a href="https://www.aaniwalli.fi/events/2024-12-13-prpl_experience">PRPL EXPERIENCE</a></div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
-<div class="grid-item">14.12.2024</div>
-<div class="grid-item">Bar Loose</div>
-<div class="grid-item"><a href="https://barloose.com/live/hyena-go-go-redlite-swe-shere-khan-daze-dolls-tku/">Hyena Go-Go: Rëdlite (SWE), Shere Khan, Daze Dolls (TKU)</a></div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
-<div class="grid-item">14.12.2024</div>
-<div class="grid-item">Bar Loose</div>
-<div class="grid-item"><a href="https://barloose.com/live/bangin-w-dj-rando-calcutta-hot-saturday-ed/">Bangin’ w/ DJ Rando Calcutta</a></div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
-<div class="grid-item">14.12.2024</div>
-<div class="grid-item">Bar Tÿpo</div>
-<div class="grid-item"><a href="https://www.bartypo.fi/event/suvella-dj/">Suvella (DJ)</a></div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
-<div class="grid-item">14.12.2024</div>
-<div class="grid-item">Boothill</div>
-<div class="grid-item"><a href="https://www.boothill.fi/bandi-illat/">Kipeet lapset, Varkat, Conjur</a></div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
-<div class="grid-item">14.12.2024</div>
-<div class="grid-item">G Livelab</div>
-<div class="grid-item"><a href="https://glivelab.fi/events/jambo-band-uus-touri-bro-mikael-laurent-6617d3f61cd094e5c8e28816/">jambo &amp; band: UUS TOURI BRO + Mikael Laurent</a></div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
-<div class="grid-item">14.12.2024</div>
-<div class="grid-item">Kaiku</div>
-<div class="grid-item"><a href="https://www.eventu.al/en/event/4967/finland/helsinki/lil-tony-ocean-people">LIL TONY &amp; OCEAN PEOPLE</a></div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
-<div class="grid-item">14.12.2024</div>
-<div class="grid-item">Korjaamo</div>
-<div class="grid-item"><a href="https://korjaamo.fi/event/atlaksen-joulukerays-asunnottomille/">Atlaksen joulukeräys asunnottomille</a></div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
-<div class="grid-item">14.12.2024</div>
-<div class="grid-item">Korjaamo</div>
-<div class="grid-item"><a href="https://korjaamo.fi/event/purple-rain-40-v-elokuvanaytos-ja-afterparty/">Purple Rain 40-v. elokuvanäytös (LOPPUUNMYYTY) ja afterparty</a></div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
-<div class="grid-item">14.12.2024</div>
-<div class="grid-item">Korjaamo</div>
-<div class="grid-item"><a href="https://korjaamo.fi/event/paha-kurki-heikkinen-sandu/">Paha Kurki (EP-julkkarit), Heikkinen (sinkkujulkkarit), Sandu (EP-julkkarit)</a></div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
-<div class="grid-item">14.12.2024</div>
-<div class="grid-item">Korjaamo</div>
-<div class="grid-item"><a href="https://korjaamo.fi/event/antti-autio/">Antti Autio, Nössö Nova</a></div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
-<div class="grid-item">14.12.2024</div>
-<div class="grid-item">Kulttuuritalo</div>
-<div class="grid-item"><a href="https://kulttuuritalo.fi/tapahtuma/ensiferum-ja-swallow-the-sun/">Ensiferum x Swallow the Sun</a></div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
-<div class="grid-item">14.12.2024</div>
-<div class="grid-item">Kulttuuritalo</div>
-<div class="grid-item"><a href="https://kulttuuritalo.fi/tapahtuma/kult-xmas-rave/">KULT: XMAS RAVE</a></div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
-<div class="grid-item">14.12.2024</div>
-<div class="grid-item">Kuudes Linja</div>
-<div class="grid-item"><a href="https://www.tiketti.fi/punk-rock-xmas-kuudes-linja-helsinki-lippuja/103475">ALKUILLAN KONSERTTI: PUNK ROCK XMAS – NYRKKITAPPELU + AINO &amp; HAJONNEET + JAANAT</a></div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
-<div class="grid-item">14.12.2024</div>
-<div class="grid-item">Kuudes Linja</div>
-<div class="grid-item"><a href="https://www.kuudeslinja.com/">THE FIX</a></div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
-<div class="grid-item">14.12.2024</div>
-<div class="grid-item">Lepakkomies</div>
-<div class="grid-item"><a href="https://www.lepis.fi/tapahtumat/galvanizer-scythrow-album-release-show-scumripper-devils-vomit/">Galvanizer + Scythrow (Album release show) + Scumripper + Devil’s Vomit</a></div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
-<div class="grid-item">14.12.2024</div>
-<div class="grid-item">Lepakkomies</div>
-<div class="grid-item"><a href="https://www.lepis.fi/tapahtumat/club-mascara-goes-90s/">Club Mascara goes 90s</a></div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
-<div class="grid-item">14.12.2024</div>
-<div class="grid-item">Manala</div>
-<div class="grid-item"><a href="https://www.manala.fi/fi/event/hi-five-quintet-live-soul-blues/2024-12-14/">Hi-Five Quintet – Live soul &amp; blues</a></div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
-<div class="grid-item">14.12.2024</div>
-<div class="grid-item">Musiikkitalo</div>
-<div class="grid-item"><a href="https://musiikkitalo.fi/konsertit-ja-tapahtumat/pehmoaino-satkynukkekoti-kaikki-tarinat-2020-2024-14-12-2024">pehmoaino -sätkynukkekoti (kaikki tarinat 2020-2024)</a></div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
-<div class="grid-item">14.12.2024</div>
-<div class="grid-item">On the Rocks</div>
-<div class="grid-item"><a href="https://www.rocks.fi/tapahtumat/emodisko-goes-bring-me-the-horizon-vol-2/">Emodisko goes Bring Me The Horizon, vol. 2</a></div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
-<div class="grid-item">14.12.2024</div>
-<div class="grid-item">On the Rocks</div>
-<div class="grid-item"><a href="https://www.rocks.fi/tapahtumat/mister-misery-swe-wake-up-frankie-heathen-hearts/">Mister Misery (SWE), Wake Up Frankie, Heathen Hearts</a></div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
-<div class="grid-item">14.12.2024</div>
-<div class="grid-item">Post Bar</div>
-<div class="grid-item"><a href="https://postbar.fi/#dekmantelclubtoursepehrdekmantelsoundsystemjonidjmora-december14th">Dekmantel Club Tour:Sepehr &amp; Dekmantel Soundsystem &amp; Joni DJ &amp; MORA</a></div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
-<div class="grid-item">14.12.2024</div>
-<div class="grid-item">Rytmi</div>
-<div class="grid-item"><a href="https://www.rytmi.net/">Sun Dog</a></div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
-<div class="grid-item">14.12.2024</div>
-<div class="grid-item">Siltanen</div>
-<div class="grid-item"><a href="https://siltanen.org/">Hotel Blackout</a></div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
-<div class="grid-item">14.12.2024</div>
-<div class="grid-item">Storyville</div>
-<div class="grid-item"><a href="https://storyville.fi/events/discolauantai-dj-juza-6/?ri=1&amp;">Discolauantai: Dj Juza</a></div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
-<div class="grid-item">14.12.2024</div>
-<div class="grid-item">Tanner</div>
-<div class="grid-item"><a href="https://ravintolatanner.fi/music">AAH! Amapiano &amp; Afro House</a></div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
-<div class="grid-item">14.12.2024</div>
-<div class="grid-item">Tavastia</div>
-<div class="grid-item"><a href="https://tavastiaklubi.fi/events/2024-12-14/sanni/99960/">SANNI</a></div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
-<div class="grid-item">14.12.2024</div>
-<div class="grid-item">Vapaakaupunki</div>
-<div class="grid-item"><a href="https://www.vapaakaupunki.fi/events/hc-sludge-noise-ilta/">In the depths of Megastructure REDI: VAINOA, LOKA, HAUTAUS, ASKEL</a></div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
-<div class="grid-item">14.12.2024</div>
-<div class="grid-item">Ääniwalli</div>
-<div class="grid-item"><a href="https://www.aaniwalli.fi/events/2024-12-14-ursus_factory">Ursus Factory, Henrik Illikainen (Tiisu-show)</a></div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
-<div class="grid-item">14.12.2024</div>
-<div class="grid-item">Ääniwalli</div>
-<div class="grid-item"><a href="https://www.aaniwalli.fi/events/2024-12-14-club_uhaul_leather_anniversary_jyoty_nl">CLUB U-HAUL LEATHER ANNIVERSARY: JYOTY (NL)</a></div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
 <div class="grid-item">15.12.2024</div>
 <div class="grid-item">Bar Loose</div>
 <div class="grid-item"><a href="https://barloose.com/live/kolmoskerho-eli-loosen-sunnarit-5-3-3/2024-12-15/">LOOSEN SUNNARIT klo 20-02</a></div>
 <div class="grid-item"></div>
 <div class="grid-item"></div>
 <div class="grid-item">15.12.2024</div>
-<div class="grid-item">Musiikkitalo</div>
-<div class="grid-item"><a href="https://musiikkitalo.fi/konsertit-ja-tapahtumat/kansanmusiikin-nuorisokoulutuksen-konsertti-15-12-2024-2">Kansanmusiikin nuorisokoulutuksen konsertti</a></div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
-<div class="grid-item">15.12.2024</div>
-<div class="grid-item">Musiikkitalo</div>
-<div class="grid-item"><a href="https://musiikkitalo.fi/konsertit-ja-tapahtumat/kazakh-orchestra-the-voice-of-the-great-steppe-15-12-2024">Kazakh Orchestra: The Voice of the Great Steppe</a></div>
+<div class="grid-item">Hard Rock House</div>
+<div class="grid-item"><a href="https://hardrockhouse.fi/">snmc: Esa Eloranta</a></div>
 <div class="grid-item"></div>
 <div class="grid-item"></div>
 <div class="grid-item">15.12.2024</div>
@@ -414,11 +122,6 @@ function hideOld() {
 <div class="grid-item">15.12.2024</div>
 <div class="grid-item">Savoy-teatteri</div>
 <div class="grid-item"><a href="https://www.savoyteatteri.fi/fi/tapahtumat/?etype=31&amp;el=49&amp;show=200">CLUB FOR FIVE: Jouluna 2024</a></div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
-<div class="grid-item">15.12.2024</div>
-<div class="grid-item">Tavastia</div>
-<div class="grid-item"><a href="https://tavastiaklubi.fi/events/2024-12-15/tavastian-kirpputori-myyntipaikka/103959/">Tavastian kirpputori - Myyntipaikka</a></div>
 <div class="grid-item"></div>
 <div class="grid-item"></div>
 <div class="grid-item">15.12.2024</div>
@@ -522,6 +225,11 @@ function hideOld() {
 <div class="grid-item"></div>
 <div class="grid-item"></div>
 <div class="grid-item">18.12.2024</div>
+<div class="grid-item">Hard Rock House</div>
+<div class="grid-item"><a href="https://hardrockhouse.fi/">Hard Rock Housen Pikkujoulut</a></div>
+<div class="grid-item"></div>
+<div class="grid-item"></div>
+<div class="grid-item">18.12.2024</div>
 <div class="grid-item">Kulttuuritalo</div>
 <div class="grid-item"><a href="https://kulttuuritalo.fi/tapahtuma/whats-love-got-to-do-with-it-the-ultimate-tribute-to-tina-turner/">What’s Love Got To Do With It? The Ultimate Tribute To Tina Turner</a></div>
 <div class="grid-item"></div>
@@ -582,6 +290,16 @@ function hideOld() {
 <div class="grid-item"></div>
 <div class="grid-item"></div>
 <div class="grid-item">19.12.2024</div>
+<div class="grid-item">Hard Rock House</div>
+<div class="grid-item"><a href="https://hardrockhouse.fi/">torstaiklubi: jemppu, elecktrick rockband, pimee</a></div>
+<div class="grid-item"></div>
+<div class="grid-item"></div>
+<div class="grid-item">19.12.2024</div>
+<div class="grid-item">Juttutupa</div>
+<div class="grid-item"><a href="https://www.facebook.com/events/471330528830976/">Hoedown</a></div>
+<div class="grid-item"></div>
+<div class="grid-item"></div>
+<div class="grid-item">19.12.2024</div>
 <div class="grid-item">Koko Jazz Club</div>
 <div class="grid-item"><a href="https://www.kokojazz.fi/event-details/afterwork-jazz-mikael-jakobson-solo">Afterwork Jazz Mikael Jakobson Solo</a></div>
 <div class="grid-item"></div>
@@ -609,6 +327,11 @@ function hideOld() {
 <div class="grid-item">19.12.2024</div>
 <div class="grid-item">On the Rocks</div>
 <div class="grid-item"><a href="https://www.rocks.fi/tapahtumat/brother-firetribe-west-metro/">Brother Firetribe, West Metro</a></div>
+<div class="grid-item"></div>
+<div class="grid-item"></div>
+<div class="grid-item">19.12.2024</div>
+<div class="grid-item">Playhouse Bar</div>
+<div class="grid-item"><a href="https://www.facebook.com/events/512781805247423/">Zombie Eater, Sidewalk Mafia, Ciminero @ Playhouse Bar, Helsinki</a></div>
 <div class="grid-item"></div>
 <div class="grid-item"></div>
 <div class="grid-item">19.12.2024</div>
@@ -659,6 +382,11 @@ function hideOld() {
 <div class="grid-item">20.12.2024</div>
 <div class="grid-item">G Livelab</div>
 <div class="grid-item"><a href="https://glivelab.fi/events/silmien-takana-eevil-stoo-laidasta-laitaan-6617d4241cd094e5c8e28a0f/">Silmien Takana: Eevil Stöö – Laidasta laitaan</a></div>
+<div class="grid-item"></div>
+<div class="grid-item"></div>
+<div class="grid-item">20.12.2024</div>
+<div class="grid-item">Hard Rock House</div>
+<div class="grid-item"><a href="https://hardrockhouse.fi/">Dry County Renegades, Undulats, Primitive Freaks</a></div>
 <div class="grid-item"></div>
 <div class="grid-item"></div>
 <div class="grid-item">20.12.2024</div>
@@ -724,6 +452,11 @@ function hideOld() {
 <div class="grid-item">20.12.2024</div>
 <div class="grid-item">On the Rocks</div>
 <div class="grid-item"><a href="https://www.rocks.fi/tapahtumat/anssi-kela-2/">Anssi Kela</a></div>
+<div class="grid-item"></div>
+<div class="grid-item"></div>
+<div class="grid-item">20.12.2024</div>
+<div class="grid-item">Playhouse Bar</div>
+<div class="grid-item"><a href="https://www.facebook.com/events/1244358049947442/">superunknowns @ PLAYHOUSE BAR VALLILA, HELSINKI 20.12.2024</a></div>
 <div class="grid-item"></div>
 <div class="grid-item"></div>
 <div class="grid-item">20.12.2024</div>
@@ -807,6 +540,16 @@ function hideOld() {
 <div class="grid-item"></div>
 <div class="grid-item"></div>
 <div class="grid-item">21.12.2024</div>
+<div class="grid-item">Hard Rock House</div>
+<div class="grid-item"><a href="https://hardrockhouse.fi/">Chrismas-up vol 2.0. Punk Parents, The Higher Low, Kalevi Drake, MONOTONIA, IRVIINA PUUMA, Tea&amp;Tomas + T-ROW</a></div>
+<div class="grid-item"></div>
+<div class="grid-item"></div>
+<div class="grid-item">21.12.2024</div>
+<div class="grid-item">Juttutupa</div>
+<div class="grid-item"><a href="https://www.facebook.com/events/1250762329481107/">Ice Mo' &amp; Zydeco Coolers</a></div>
+<div class="grid-item"></div>
+<div class="grid-item"></div>
+<div class="grid-item">21.12.2024</div>
 <div class="grid-item">Kaiku</div>
 <div class="grid-item"><a href="https://www.eventu.al/en/event/4788/finland/helsinki/katerina-dj-jvs-daniel-kayrouz-justus-valtanen">ÉMOTSIYA</a></div>
 <div class="grid-item"></div>
@@ -859,6 +602,11 @@ function hideOld() {
 <div class="grid-item">21.12.2024</div>
 <div class="grid-item">On the Rocks</div>
 <div class="grid-item"><a href="https://www.rocks.fi/tapahtumat/anssi-kela/">Anssi Kela</a></div>
+<div class="grid-item"></div>
+<div class="grid-item"></div>
+<div class="grid-item">21.12.2024</div>
+<div class="grid-item">Playhouse Bar</div>
+<div class="grid-item"><a href="https://www.facebook.com/events/936690918256637/">PLAYHOUSE BAR PIKKUJOULUFEST</a></div>
 <div class="grid-item"></div>
 <div class="grid-item"></div>
 <div class="grid-item">21.12.2024</div>
@@ -1077,6 +825,11 @@ function hideOld() {
 <div class="grid-item"></div>
 <div class="grid-item"></div>
 <div class="grid-item">28.12.2024</div>
+<div class="grid-item">Juttutupa</div>
+<div class="grid-item"><a href="https://www.facebook.com/events/1462562894410832/">Marjo Leinonen &amp; Bublicans</a></div>
+<div class="grid-item"></div>
+<div class="grid-item"></div>
+<div class="grid-item">28.12.2024</div>
 <div class="grid-item">Kaiku</div>
 <div class="grid-item"><a href="https://www.eventu.al/en/event/6310/finland/helsinki/paula-koski">PAULA KOSKI</a></div>
 <div class="grid-item"></div>
@@ -1169,6 +922,11 @@ function hideOld() {
 <div class="grid-item">31.12.2024</div>
 <div class="grid-item">Bar Loose</div>
 <div class="grid-item"><a href="https://barloose.com/live/bar-loosen-uv-i-revolt-garden-of-stone-nervebreak/">Bar Loosen UV: I Revolt, Garden of Stone, Nervebreak</a></div>
+<div class="grid-item"></div>
+<div class="grid-item"></div>
+<div class="grid-item">31.12.2024</div>
+<div class="grid-item">Juttutupa</div>
+<div class="grid-item"><a href="https://www.facebook.com/events/932252542139631/">Roamin' Street Band</a></div>
 <div class="grid-item"></div>
 <div class="grid-item"></div>
 <div class="grid-item">31.12.2024</div>
@@ -1337,6 +1095,16 @@ function hideOld() {
 <div class="grid-item"></div>
 <div class="grid-item"></div>
 <div class="grid-item">04.01.2025</div>
+<div class="grid-item">Käpygrilli</div>
+<div class="grid-item"><a href="https://www.facebook.com/events/751725997127358/">Hasta la vista tipaton</a></div>
+<div class="grid-item"></div>
+<div class="grid-item"></div>
+<div class="grid-item">04.01.2025</div>
+<div class="grid-item">Lepakkomies</div>
+<div class="grid-item"><a href="https://www.lepis.fi/tapahtumat/pelko-puiset-heilat/">Pelko + Puiset Heilat</a></div>
+<div class="grid-item"></div>
+<div class="grid-item"></div>
+<div class="grid-item">04.01.2025</div>
 <div class="grid-item">On the Rocks</div>
 <div class="grid-item"><a href="https://www.rocks.fi/tapahtumat/enemies-everywhere-split-iris-sorretun-voima/">Enemies Everywhere, Split Iris, Sorretun Voima</a></div>
 <div class="grid-item"></div>
@@ -1397,6 +1165,11 @@ function hideOld() {
 <div class="grid-item"></div>
 <div class="grid-item"></div>
 <div class="grid-item">08.01.2025</div>
+<div class="grid-item">Lepakkomies</div>
+<div class="grid-item"><a href="https://www.lepis.fi/tapahtumat/hot-kommunist-est-fin-no-ei-aresti/">Hot Kommunist (EST/FIN) + NO EI! + Aresti</a></div>
+<div class="grid-item"></div>
+<div class="grid-item"></div>
+<div class="grid-item">08.01.2025</div>
 <div class="grid-item">On the Rocks</div>
 <div class="grid-item"><a href="https://www.rocks.fi/tapahtumat/berlin-project-a-tribute-to-david-bowie/">Berlin Project– a tribute to David Bowie</a></div>
 <div class="grid-item"></div>
@@ -1409,6 +1182,11 @@ function hideOld() {
 <div class="grid-item"></div>
 <div class="grid-item"></div>
 <div class="grid-item"></div>
+<div class="grid-item"></div>
+<div class="grid-item"></div>
+<div class="grid-item">09.01.2025</div>
+<div class="grid-item">Lepakkomies</div>
+<div class="grid-item"><a href="https://www.lepis.fi/tapahtumat/inhospito-swe-oksennus-neandertaal-truth-commission-le-kriz-an-atrophist/">Inhóspito (SWE) + Oksennus + Neandertaal + Truth Commission + Le Kriz An + Atrophist</a></div>
 <div class="grid-item"></div>
 <div class="grid-item"></div>
 <div class="grid-item">09.01.2025</div>
@@ -1447,6 +1225,21 @@ function hideOld() {
 <div class="grid-item"></div>
 <div class="grid-item"></div>
 <div class="grid-item">10.01.2025</div>
+<div class="grid-item">Lepakkomies</div>
+<div class="grid-item"><a href="https://www.lepis.fi/tapahtumat/pakkasukko-putinia-vastaan-avauskonsertti-father-frost-against-putin-opening-concert/">Pakkasukko Putinia vastaan – avauskonsertti // Father Frost Against Putin – opening concert</a></div>
+<div class="grid-item"></div>
+<div class="grid-item"></div>
+<div class="grid-item">10.01.2025</div>
+<div class="grid-item">Playhouse Bar</div>
+<div class="grid-item"><a href="https://www.facebook.com/events/1304207927690452/">Love Potion Psych fest 10.1 - 11.1.2025</a></div>
+<div class="grid-item"></div>
+<div class="grid-item"></div>
+<div class="grid-item">10.01.2025</div>
+<div class="grid-item">Playhouse Bar</div>
+<div class="grid-item"><a href="https://www.facebook.com/events/2920831551400700/">Rock, Rieha ja Rakkaus</a></div>
+<div class="grid-item"></div>
+<div class="grid-item"></div>
+<div class="grid-item">10.01.2025</div>
 <div class="grid-item">Tavastia</div>
 <div class="grid-item"><a href="https://tavastiaklubi.fi/events/2025-01-10/robin-packalen-levyjulkkarit/104231/">Robin Packalen (Levyjulkkarit)</a></div>
 <div class="grid-item"></div>
@@ -1473,12 +1266,12 @@ function hideOld() {
 <div class="grid-item"></div>
 <div class="grid-item">11.01.2025</div>
 <div class="grid-item">Korjaamo</div>
-<div class="grid-item"><a href="https://korjaamo.fi/event/woro-10-wee/">Woro 10 wee!</a></div>
+<div class="grid-item"><a href="https://korjaamo.fi/event/kasarihevi-ilta-rare-maiden-faijas-con-dio-innocent-victims/">Kasarihevi-ilta: Rare Maiden, Faijas Con Dio, Innocent Victims</a></div>
 <div class="grid-item"></div>
 <div class="grid-item"></div>
 <div class="grid-item">11.01.2025</div>
 <div class="grid-item">Korjaamo</div>
-<div class="grid-item"><a href="https://korjaamo.fi/event/kasarihevi-ilta-rare-maiden-faijas-con-dio-innocent-victims/">Kasarihevi-ilta: Rare Maiden, Faijas Con Dio, Innocent Victims</a></div>
+<div class="grid-item"><a href="https://korjaamo.fi/event/woro-10-wee/">Woro 10 wee!</a></div>
 <div class="grid-item"></div>
 <div class="grid-item"></div>
 <div class="grid-item">11.01.2025</div>
@@ -1622,6 +1415,11 @@ function hideOld() {
 <div class="grid-item"></div>
 <div class="grid-item"></div>
 <div class="grid-item">17.01.2025</div>
+<div class="grid-item">Playhouse Bar</div>
+<div class="grid-item"><a href="https://www.facebook.com/events/528087346482273/">The Fërtility Cült, Swarm, Alinen @Playhouse Bar</a></div>
+<div class="grid-item"></div>
+<div class="grid-item"></div>
+<div class="grid-item">17.01.2025</div>
 <div class="grid-item">Semifinal</div>
 <div class="grid-item"><a href="https://tavastiaklubi.fi/events/2025-01-17/fan-theories-pop-therapy/105238/">Fan Theories, Pop Therapy</a></div>
 <div class="grid-item"></div>
@@ -1648,12 +1446,12 @@ function hideOld() {
 <div class="grid-item"></div>
 <div class="grid-item">18.01.2025</div>
 <div class="grid-item">Kulttuuritalo</div>
-<div class="grid-item"><a href="https://kulttuuritalo.fi/tapahtuma/uk-pink-floyd-experience/">UK Pink Floyd Experience</a></div>
+<div class="grid-item"><a href="https://kulttuuritalo.fi/tapahtuma/forever-jackson-legacy-of-a-legend/">FOREVER JACKSON – Legacy of a Legend</a></div>
 <div class="grid-item"></div>
 <div class="grid-item"></div>
 <div class="grid-item">18.01.2025</div>
 <div class="grid-item">Kulttuuritalo</div>
-<div class="grid-item"><a href="https://kulttuuritalo.fi/tapahtuma/forever-jackson-legacy-of-a-legend/">FOREVER JACKSON – Legacy of a Legend</a></div>
+<div class="grid-item"><a href="https://kulttuuritalo.fi/tapahtuma/uk-pink-floyd-experience/">UK Pink Floyd Experience</a></div>
 <div class="grid-item"></div>
 <div class="grid-item"></div>
 <div class="grid-item">18.01.2025</div>
@@ -1791,6 +1589,11 @@ function hideOld() {
 <div class="grid-item"><a href="https://tavastiaklubi.fi/events/2025-01-23/miriam-bryant-swe/103188/">Miriam Bryant (SWE)</a></div>
 <div class="grid-item"></div>
 <div class="grid-item"></div>
+<div class="grid-item">23.01.2025</div>
+<div class="grid-item">Tenho Restobar</div>
+<div class="grid-item"><a href="https://fb.me/e/9ggQZ12cT">PESSO</a></div>
+<div class="grid-item"></div>
+<div class="grid-item"></div>
 <div class="grid-item"></div>
 <div class="grid-item"></div>
 <div class="grid-item"></div>
@@ -1843,12 +1646,12 @@ function hideOld() {
 <div class="grid-item"></div>
 <div class="grid-item">25.01.2025</div>
 <div class="grid-item">Korjaamo</div>
-<div class="grid-item"><a href="https://korjaamo.fi/event/mikko-joensuu-2/">Mikko Joensuu</a></div>
+<div class="grid-item"><a href="https://korjaamo.fi/event/hit-the-breaks-bronze-silver-brass-single-release-party/">HIT THE BREAKS! Bronze, Silver &amp; Brass single release party</a></div>
 <div class="grid-item"></div>
 <div class="grid-item"></div>
 <div class="grid-item">25.01.2025</div>
 <div class="grid-item">Korjaamo</div>
-<div class="grid-item"><a href="https://korjaamo.fi/event/hit-the-breaks-bronze-silver-brass-single-release-party/">HIT THE BREAKS! Bronze, Silver &amp; Brass single release party</a></div>
+<div class="grid-item"><a href="https://korjaamo.fi/event/mikko-joensuu-2/">Mikko Joensuu</a></div>
 <div class="grid-item"></div>
 <div class="grid-item"></div>
 <div class="grid-item">25.01.2025</div>
@@ -1872,6 +1675,11 @@ function hideOld() {
 <div class="grid-item"></div>
 <div class="grid-item"></div>
 <div class="grid-item">25.01.2025</div>
+<div class="grid-item">Tiivistämö</div>
+<div class="grid-item"><a href="https://tiivistamo.fi/event/helsinki:agj4dgdsoq/gamseong-party?lang=fi">Gamseong Party</a></div>
+<div class="grid-item"></div>
+<div class="grid-item"></div>
+<div class="grid-item">25.01.2025</div>
 <div class="grid-item">Vuotalo</div>
 <div class="grid-item"><a href="https://www.vuotalo.fi/fi/tapahtumat/?etype=31&amp;el=45&amp;show=200">Barlast</a></div>
 <div class="grid-item"></div>
@@ -1889,6 +1697,11 @@ function hideOld() {
 <div class="grid-item">26.01.2025</div>
 <div class="grid-item">Finlandia-talo</div>
 <div class="grid-item"><a href="https://www.finlandiatalo.fi/tapahtumat/apocalyptica-plays-metallica-vol-2/">Apocalyptica Plays Metallica Vol. 2</a></div>
+<div class="grid-item"></div>
+<div class="grid-item"></div>
+<div class="grid-item">26.01.2025</div>
+<div class="grid-item">Playhouse Bar</div>
+<div class="grid-item"><a href="https://www.facebook.com/events/1286062585669558/">PLAYHOUSE BAR MUSAKIRPPIS</a></div>
 <div class="grid-item"></div>
 <div class="grid-item"></div>
 <div class="grid-item">26.01.2025</div>
@@ -2382,6 +2195,11 @@ function hideOld() {
 <div class="grid-item"></div>
 <div class="grid-item"></div>
 <div class="grid-item">15.02.2025</div>
+<div class="grid-item">Playhouse Bar</div>
+<div class="grid-item"><a href="https://www.facebook.com/events/595794802878966/">BETONI MURTUU! - Punk: LA15.2. HELSINKI @Playhouse Bar</a></div>
+<div class="grid-item"></div>
+<div class="grid-item"></div>
+<div class="grid-item">15.02.2025</div>
 <div class="grid-item">Tavastia</div>
 <div class="grid-item"><a href="https://tavastiaklubi.fi/events/2025-02-15/k40-disco-djt-antti-tomi/104622/">K40-disco: DJ:t Antti &amp; Tomi</a></div>
 <div class="grid-item"></div>
@@ -2643,12 +2461,12 @@ function hideOld() {
 <div class="grid-item"></div>
 <div class="grid-item">01.03.2025</div>
 <div class="grid-item">Kulttuuritalo</div>
-<div class="grid-item"><a href="https://kulttuuritalo.fi/tapahtuma/ida-paul-kalle-lindroth-lisakonsertti/">Ida Paul &amp; Kalle Lindroth -lisäkonsertti 1.3.2025 (päivä+brunssi)</a></div>
+<div class="grid-item"><a href="https://kulttuuritalo.fi/tapahtuma/ida-paul-kalle-lindroth/">Ida Paul &amp; Kalle Lindroth</a></div>
 <div class="grid-item"></div>
 <div class="grid-item"></div>
 <div class="grid-item">01.03.2025</div>
 <div class="grid-item">Kulttuuritalo</div>
-<div class="grid-item"><a href="https://kulttuuritalo.fi/tapahtuma/ida-paul-kalle-lindroth/">Ida Paul &amp; Kalle Lindroth</a></div>
+<div class="grid-item"><a href="https://kulttuuritalo.fi/tapahtuma/ida-paul-kalle-lindroth-lisakonsertti/">Ida Paul &amp; Kalle Lindroth -lisäkonsertti 1.3.2025 (päivä+brunssi)</a></div>
 <div class="grid-item"></div>
 <div class="grid-item"></div>
 <div class="grid-item">01.03.2025</div>
@@ -3546,6 +3364,16 @@ function hideOld() {
 <div class="grid-item"></div>
 <div class="grid-item"></div>
 <div class="grid-item"></div>
+<div class="grid-item">19.04.2025</div>
+<div class="grid-item">Vapaakaupunki</div>
+<div class="grid-item"><a href="https://www.vapaakaupunki.fi/events/vapaa-pudotus-pisko-a-ja-varpuset/">Vapaa pudotus: Pisko A. ja Varpuset</a></div>
+<div class="grid-item"></div>
+<div class="grid-item"></div>
+<div class="grid-item"></div>
+<div class="grid-item"></div>
+<div class="grid-item"></div>
+<div class="grid-item"></div>
+<div class="grid-item"></div>
 <div class="grid-item">20.04.2025</div>
 <div class="grid-item">Bar Loose</div>
 <div class="grid-item"><a href="https://barloose.com/live/kolmoskerho-eli-loosen-sunnarit-5-3-3/2025-04-20/">LOOSEN SUNNARIT klo 20-02</a></div>
@@ -4099,6 +3927,16 @@ function hideOld() {
 <div class="grid-item">02.09.2025</div>
 <div class="grid-item">Ääniwalli</div>
 <div class="grid-item"><a href="https://www.aaniwalli.fi/events/2024-09-02-sydn_sydn_tuomas_skopan_jhyviskiertue">SYDÄN, SYDÄN: Tuomas Skopan jäähyväiskiertue</a></div>
+<div class="grid-item"></div>
+<div class="grid-item"></div>
+<div class="grid-item"></div>
+<div class="grid-item"></div>
+<div class="grid-item"></div>
+<div class="grid-item"></div>
+<div class="grid-item"></div>
+<div class="grid-item">13.09.2025</div>
+<div class="grid-item">Savoy-teatteri</div>
+<div class="grid-item"><a href="https://www.savoyteatteri.fi/fi/tapahtumat/?etype=31&amp;el=49&amp;show=200">Kaseva: Kun maailma elää</a></div>
 <div class="grid-item"></div>
 <div class="grid-item"></div>
 <div class="grid-item"></div>
